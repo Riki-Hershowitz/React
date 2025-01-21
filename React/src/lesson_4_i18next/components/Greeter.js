@@ -1,5 +1,6 @@
 import React, { useState, useContext } from "react";
 import { I18nContext } from "../lang";
+import "./Greeter.css";
 
 
 export default function Greeter(props) {
@@ -9,7 +10,7 @@ export default function Greeter(props) {
   return (
     <>
       <label>
-        {t("hello")}, {t("whats_your_name")}
+        {t("hello")}, {t("whats_your_name")}<tr></tr>
         <input
           type="text"
           value={name}

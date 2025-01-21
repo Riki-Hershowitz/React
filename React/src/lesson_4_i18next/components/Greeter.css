@@ -1,0 +1,96 @@
+/* עיצוב כללי לדף */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #ef849f 0%, #f170c6 100%);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  color: #fff;
+}
+
+/* עיצוב הקומפוננטה */
+.greeter-container {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 30px 20px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0px 10px 30px rgba(255, 254, 254, 0.3);
+  text-align: center;
+  animation: slideIn 0.6s ease-out;
+}
+
+/* כותרת */
+label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fffefe;
+  display: block;
+  margin-bottom: 15px;
+}
+
+p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #fffefe;
+    display: block;
+    margin-bottom: 15px; 
+}
+
+/* שדה הקלט */
+input {
+    margin-top: 15px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    border: none;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 6px 15px rgba(255, 126, 95, 0.4);
+}
+
+/* אפקט על שדה הקלט */
+input:focus {
+  border-color: #fbfbfc;
+  outline: none;
+  box-shadow: 0px 4px 15px rgba(254, 253, 253, 0.5);
+}
+
+/* כפתור */
+button {
+  margin-top: 15px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 6px 15px rgba(255, 126, 95, 0.4);
+}
+
+/* אפקט לכפתור */
+button:hover {
+  background: linear-gradient(90deg, #feb47b, #ff7e5f);
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 20px rgba(255, 126, 95, 0.6);
+}
+
+/* אפקטים */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
