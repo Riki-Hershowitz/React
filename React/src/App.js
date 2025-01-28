@@ -33,33 +33,35 @@
 
 
 //lesson 4- i18n
-import React, { useState } from 'react';
-import { I18nContext, i18n } from './lesson_4_i18next/lang';
-import Header from './lesson_4_i18next/components/Header';
-import Greeter from './lesson_4_i18next/components/Greeter';
-import LanguageSelector from './lesson_4_i18next/components/LanguageSelector';
+// import React, { useState } from 'react';
+// import { I18nContext, i18n } from './lesson_4_i18next/lang';
+// import Header from './lesson_4_i18next/components/Header';
+// import Greeter from './lesson_4_i18next/components/Greeter';
+// import LanguageSelector from './lesson_4_i18next/components/LanguageSelector';
 
-const translationFunctions = {
-  en: id => i18n.en[id],
-  he: id => i18n.he[id]
-};
+// const translationFunctions = {
+//   en: id => i18n.en[id],
+//   he: id => i18n.he[id]
+// };
 
-function App() {
-  const [lang, setLang] = useState("en");
+// function App() {
+//   const [lang, setLang] = useState("en");
 
-  function toggleLang() {
-    setLang(lang === "en" ? "he" : "en");
-  }
+//   function toggleLang() {
+//     setLang(lang === "en" ? "he" : "en");
+//   }
 
-  return (
-    <I18nContext.Provider value={translationFunctions[lang]}>
-      <div className="App">
-        <Header />
-        <Greeter />
-        <LanguageSelector toggleLang={toggleLang} />
-      </div>
-    </I18nContext.Provider>
-  );
-}
+//   return (
+//     <I18nContext.Provider value={translationFunctions[lang]}>
+//       <div className="App">
+//         <Header />
+//         <Greeter />
+//         <LanguageSelector toggleLang={toggleLang} />
+//       </div>
+//     </I18nContext.Provider>
+//   );
+// }
 
-export default App;
+// export default App;
+
+//lesson 5
