@@ -65,3 +65,16 @@
 // export default App;
 
 //lesson 5
+
+import React from "react";
+import Todo from "./lesson_5/components/Todos";
+import { Provider } from "react-redux";
+import { store } from "./lesson_5/redux/store";
+
+export default function app(){
+    return(
+        <Provider store={store}>
+            <Todo></Todo>
+        </Provider>
+    )
+};
